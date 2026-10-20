@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificados | Vitória Moraes</title>
+
+    <!-- Mantém a conexão com o CSS principal do portfólio -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Estilos exclusivos desta página -->
+    <style>
+        .pagina-certificados {
+            min-height: 100vh;
+            padding: 45px 20px;
+        }
+
+        .perfil-certificados {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .foto-certificados {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--azul-medio, #AFCBEA);
+            margin-bottom: 15px;
+        }
+
+        .perfil-certificados h1 {
+            color: var(--azul-escuro, #24476C);
+            margin-bottom: 10px;
+        }
+
+        .descricao-certificados {
+            color: var(--azul-texto, #466789);
+            margin-bottom: 30px;
+        }
+
+        .titulo-certificados {
+            color: var(--azul-escuro, #24476C);
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+        }
+
+        /* Dois cards lado a lado */
+        .grade-certificados {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .card-certificados {
+            min-width: 0;
+            padding: 15px;
+            text-align: left;
+            border: 1px solid var(--borda, #B9CEE8);
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .imagem-certificados {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: contain;
+            border-radius: 5px;
+            margin-bottom: 12px;
+            background: var(--azul-claro, #D8E7F8);
+        }
+
+        .nome-certificado {
+            color: var(--azul-escuro, #24476C);
+            font-size: 1.05rem;
+            margin-bottom: 10px;
+        }
+
+        .link-certificados {
+            color: var(--azul-escuro, #24476C);
+            text-decoration: underline;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .link-certificados:hover {
+            color: var(--azul-texto, #466789);
+        }
+
+        .voltar-certificados {
+            display: inline-block;
+            margin-top: 30px;
+            color: var(--azul-escuro, #24476C);
+            text-decoration: none;
+        }
+
+        .voltar-certificados:hover {
+            text-decoration: underline;
+        }
+
+        /* Adaptação para celulares */
+        @media (max-width: 600px) {
+            .pagina-certificados {
+                padding: 30px 16px;
+            }
+
+            .grade-certificados {
+                grid-template-columns: 1fr;
+            }
+
+            .imagem-certificados {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="pagina-certificados">
+
+        <!-- Perfil no topo -->
+        <header class="perfil-certificados">
+
+            <img
+                src="c:\Users\mvito\Downloads\Vih moraes.jpeg"
+                alt="Foto de Vitória Moraes"
+                class="foto-certificados"
+            >
+
+            <h1>Vitória Moraes</h1>
+
+            <p class="descricao-certificados">
+                Desenvolvedora aprendiz Front-end no Programa Trilhas
+            </p>
+
+        </header>
+
+        <h2 class="titulo-certificados">Meus certificados</h2>
+
+        <!-- Dois cards de certificados -->
+        <section class="grade-certificados"
+                 aria-label="Meus certificados">
+
+            <!-- Certificado 1 -->
+            <article class="card-certificados">
+
+                <img
+                    src="c:\Users\mvito\OneDrive\Imagens\Screenshots\cesar school.png"
+                    alt="Imagem do primeiro certificado"
+                    class="imagem-certificados"
+                >
+
+                <h3 class="nome-certificado">
+                    Cesar School
+                </h3>
+
+                <a
+                    class="link-certificados"
+                    href="file:///C:/Users/mvito/OneDrive/Desktop/curso%20JS/certificados/Certificado%20Fundac%CC%A7a%CC%83o%20Digital.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    →
+                </a>
+
+            </article>
+
+            <!-- Cesar School -->
+            <article class="card-certificados">
+
+                <img
+                    src="c:\Users\mvito\OneDrive\Imagens\Screenshots\Alura.png"
+                    alt="Imagem do segundo certificado"
+                    class="imagem-certificados"
+                >
+
+                <h3 class="nome-certificado">
+                    Alura
+                </h3>
+
+                <a
+                    class="link-certificados"
+                    href="file:///C:/Users/mvito/OneDrive/Desktop/curso%20JS/certificados/Certificado%20Alura%20-%20Curso%20Come%C3%A7ando%20em%20Programa%C3%A7%C3%A3o_%20carreira%20e%20primeiros%20passos.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    →
+                </a>
+
+            </article>
+
+        </section>
+
+        <!-- Retorno à página inicial -->
+        <div style="text-align: center;">
+            <a class="voltar-certificados" href="index.html">
+                ← Voltar para o início
+            </a>
+        </div>
+
+    </main>
+
+</body>
+</html>
